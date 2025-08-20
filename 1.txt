@@ -1,0 +1,9 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('random_dataset.csv').dropna() #dropna here is used to clean data set with any null values present
+df
+
+df.plot(x=df.columns[0], y = df.columns[1], kind = 'bar', color = 'grey') #User can modify by plotting relationships between different quantities and using bar, scatter  or pie
+ 
+plt.show()
